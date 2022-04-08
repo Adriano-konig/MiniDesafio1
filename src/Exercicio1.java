@@ -2,18 +2,17 @@ import java.util.Scanner;
 
 public class Exercicio1 {
     public static void main(String[] args) {
-        int vetor[] = new int[5];
+        Scanner leitor = new Scanner(System.in);
+        System.out.println(" Digite numero: ");
+        int n1 = leitor.nextInt();
+        System.out.println(" Digite outro numero: ");
+        int n2 = leitor.nextInt();
 
-        for(int i = 0; i < vetor.length; i++){
-            Scanner leitor = new Scanner(System.in);
-            System.out.println( (i+1)+" Digite numero: ");
-            vetor[i] = leitor.nextInt();
-        }
-        for(int i = 0; i < vetor.length; i++) {
-            vetor[i] = vetor[i];
-            if(i == i){
-                System.out.println(vetor[i]+"Esse numero São iguais");
+            if(n1 == n2){
+                System.out.println("Esse numero São iguais");
+            }else{
+                System.out.println("Esses dois numeros não são iguais");
             }
         }
         }
-}
+
